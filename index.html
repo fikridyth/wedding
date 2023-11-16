@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylegallery.css">
 </head>
 
 <body>
@@ -246,10 +247,14 @@
           <h2>Galeri Foto</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque?</p>
         </div>
+
+        <div class="jumbo">
+        </div>
       </div>
 
+
       <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-        <div class="col mt-3">
+        <!-- <div class="col mt-3">
           <a href="img/gallery/5.png" data-toggle="lightbox" data-caption="Fikri & Rifa 5" data-gallery="mygallery">
             <img src="img/gallery/thumbnail/5.png" alt="Fikri & Rifa 5" class="img-fluid w-100 rounded">
           </a>
@@ -279,7 +284,37 @@
             data-gallery="mygallery">
             <img src="https://picsum.photos/id/305/300/400" alt="Fikri & Rifa 6" class="img-fluid w-100 rounded">
           </a>
+        </div> -->
+
+        <div id="drag-container">
+          <div id="spin-container">
+            <!-- Add your images (or video) here -->
+            <img
+              src="https://images.pexels.com/photos/206395/pexels-photo-206395.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Click me" onclick="changeBackground(this.src)">
+            <img
+              src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Click me" onclick="changeBackground(this.src)">
+            <img
+              src="https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Click me" onclick="changeBackground(this.src)">
+            <img
+              src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Click me" onclick="changeBackground(this.src)">
+            <img
+              src="https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Click me" onclick="changeBackground(this.src)">
+            <img
+              src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Click me" onclick="changeBackground(this.src)">
+
+            <!-- Text at center of ground -->
+            <p>3D Tiktok Carousel</p>
+          </div>
+          <div id="ground"></div>
         </div>
+
+        <div id="music-container"></div>
       </div>
     </div>
   </section>
@@ -409,6 +444,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
+  <script src="scriptgallery.js"></script>
+
   <script>
     simplyCountdown('.simply-countdown', {
       year: 2024, // required
@@ -438,7 +475,7 @@
 
   </script>
 
-  <script>
+  <!-- <script>
     const rootElement = document.querySelector(":root");
     const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
     const audioIcon = document.querySelector('.audio-icon-wrapper i');
@@ -488,7 +525,7 @@
     //   disableScroll();
     // }
     disableScroll();
-  </script>
+  </script> -->
   <script>
     window.addEventListener("load", function () {
       const form = document.getElementById('my-form');

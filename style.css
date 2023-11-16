@@ -181,9 +181,13 @@ body {
 }
 
 .story,
-.gallery,
 .rsvp,
 .gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.gallery {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
